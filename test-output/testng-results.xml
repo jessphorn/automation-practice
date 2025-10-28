@@ -1,203 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="0" failed="4" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-10-27T15:04:32 EDT" name="Default suite" finished-at="2025-10-27T15:05:15 EDT" duration-ms="42368">
+  <suite started-at="2025-10-28T17:25:07 EDT" name="Suite" finished-at="2025-10-28T17:25:16 EDT" duration-ms="9182">
     <groups>
-      <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.CucumberRunnerTests@16150369]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
-      </group> <!-- cucumber -->
     </groups>
-    <test started-at="2025-10-27T15:04:32 EDT" name="Default test" finished-at="2025-10-27T15:05:15 EDT" duration-ms="42368">
-      <class name="runner.CucumberRunnerTests">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.CucumberRunnerTests@16150369]" started-at="2025-10-27T15:04:32 EDT" name="setUpClass" finished-at="2025-10-27T15:04:33 EDT" duration-ms="617" status="PASS">
+    <test started-at="2025-10-28T17:25:07 EDT" name="Test" finished-at="2025-10-28T17:25:16 EDT" duration-ms="9182">
+      <class name="tests.MyAccountPageTest">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:tests.MyAccountPageTest@312aa7c]" started-at="2025-10-28T17:25:07 EDT" name="setup" finished-at="2025-10-28T17:25:12 EDT" duration-ms="5161" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@68ab0936]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.CucumberRunnerTests@16150369]" started-at="2025-10-27T15:04:33 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-10-27T15:04:45 EDT" duration-ms="11436" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Login with valid credentials"]]>
+                <![CDATA[Edge]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Login to Poco Mega Store"]]>
+                <![CDATA[https://ecommerce-playground.lambdatest.io/]]>
               </value>
             </param>
           </params>
-          <exception class="tools.jackson.core.exc.StreamReadException">
-            <message>
-              <![CDATA[Unexpected character ('}' (code 125)): was expecting double-quote to start property name
- at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); byte offset: #594]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[tools.jackson.core.exc.StreamReadException: Unexpected character ('}' (code 125)): was expecting double-quote to start property name
- at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); byte offset: #594]
-at tools.jackson.core.JsonParser._constructReadException(JsonParser.java:1800)
-at tools.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:1049)
-at tools.jackson.core.json.UTF8StreamJsonParser._handleOddName(UTF8StreamJsonParser.java:2450)
-at tools.jackson.core.json.UTF8StreamJsonParser._parseName(UTF8StreamJsonParser.java:2101)
-at tools.jackson.core.json.UTF8StreamJsonParser.nextName(UTF8StreamJsonParser.java:945)
-at tools.jackson.databind.deser.jackson.BaseNodeDeserializer._deserializeContainerNoRecursion(BaseNodeDeserializer.java:316)
-at tools.jackson.databind.deser.jackson.JsonNodeDeserializer.deserialize(JsonNodeDeserializer.java:86)
-at tools.jackson.databind.deser.jackson.JsonNodeDeserializer.deserialize(JsonNodeDeserializer.java:11)
-at tools.jackson.databind.deser.DeserializationContextExt.readRootValue(DeserializationContextExt.java:265)
-at tools.jackson.databind.ObjectMapper._readTreeAndClose(ObjectMapper.java:2647)
-at tools.jackson.databind.ObjectMapper.readTree(ObjectMapper.java:1190)
-at utilties.JSONReader.readJsonFile(JSONReader.java:14)
-at pages.LoginPage.<init>(LoginPage.java:33)
-at pages.HomePage.goToLogin(HomePage.java:52)
-at tests.LoginPageTest.loginTest(LoginPageTest.java:35)
-at ✽.User is on Poco Mega Store Login page "https://ecommerce-playground.lambdatest.io/index.php?route=account/login"(file:///C:/Users/jessp/eclipse-workspace/AutomationPractice/src/test/resources/features/LoginPage.feature:4)
-]]>
-            </full-stacktrace>
-          </exception> <!-- tools.jackson.core.exc.StreamReadException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.CucumberRunnerTests@16150369]" started-at="2025-10-27T15:04:45 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-10-27T15:04:55 EDT" duration-ms="10073" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Login with invalid credentials"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Login to Poco Mega Store"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="tools.jackson.core.exc.StreamReadException">
-            <message>
-              <![CDATA[Unexpected character ('}' (code 125)): was expecting double-quote to start property name
- at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); byte offset: #594]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[tools.jackson.core.exc.StreamReadException: Unexpected character ('}' (code 125)): was expecting double-quote to start property name
- at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); byte offset: #594]
-at tools.jackson.core.JsonParser._constructReadException(JsonParser.java:1800)
-at tools.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:1049)
-at tools.jackson.core.json.UTF8StreamJsonParser._handleOddName(UTF8StreamJsonParser.java:2450)
-at tools.jackson.core.json.UTF8StreamJsonParser._parseName(UTF8StreamJsonParser.java:2101)
-at tools.jackson.core.json.UTF8StreamJsonParser.nextName(UTF8StreamJsonParser.java:945)
-at tools.jackson.databind.deser.jackson.BaseNodeDeserializer._deserializeContainerNoRecursion(BaseNodeDeserializer.java:316)
-at tools.jackson.databind.deser.jackson.JsonNodeDeserializer.deserialize(JsonNodeDeserializer.java:86)
-at tools.jackson.databind.deser.jackson.JsonNodeDeserializer.deserialize(JsonNodeDeserializer.java:11)
-at tools.jackson.databind.deser.DeserializationContextExt.readRootValue(DeserializationContextExt.java:265)
-at tools.jackson.databind.ObjectMapper._readTreeAndClose(ObjectMapper.java:2647)
-at tools.jackson.databind.ObjectMapper.readTree(ObjectMapper.java:1190)
-at utilties.JSONReader.readJsonFile(JSONReader.java:14)
-at pages.LoginPage.<init>(LoginPage.java:33)
-at pages.HomePage.goToLogin(HomePage.java:52)
-at tests.LoginPageTest.loginTest(LoginPageTest.java:35)
-at ✽.User is on Poco Mega Store Login page "https://ecommerce-playground.lambdatest.io/index.php?route=account/login"(file:///C:/Users/jessp/eclipse-workspace/AutomationPractice/src/test/resources/features/LoginPage.feature:4)
-]]>
-            </full-stacktrace>
-          </exception> <!-- tools.jackson.core.exc.StreamReadException -->
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.MyAccountPageTest@312aa7c]" started-at="2025-10-28T17:25:12 EDT" name="setup" finished-at="2025-10-28T17:25:12 EDT" duration-ms="4" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.CucumberRunnerTests@16150369]" started-at="2025-10-27T15:04:55 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-10-27T15:05:05 EDT" duration-ms="10361" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Login with invalid credentials"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Login to Poco Mega Store"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="tools.jackson.core.exc.StreamReadException">
-            <message>
-              <![CDATA[Unexpected character ('}' (code 125)): was expecting double-quote to start property name
- at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); byte offset: #594]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[tools.jackson.core.exc.StreamReadException: Unexpected character ('}' (code 125)): was expecting double-quote to start property name
- at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); byte offset: #594]
-at tools.jackson.core.JsonParser._constructReadException(JsonParser.java:1800)
-at tools.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:1049)
-at tools.jackson.core.json.UTF8StreamJsonParser._handleOddName(UTF8StreamJsonParser.java:2450)
-at tools.jackson.core.json.UTF8StreamJsonParser._parseName(UTF8StreamJsonParser.java:2101)
-at tools.jackson.core.json.UTF8StreamJsonParser.nextName(UTF8StreamJsonParser.java:945)
-at tools.jackson.databind.deser.jackson.BaseNodeDeserializer._deserializeContainerNoRecursion(BaseNodeDeserializer.java:316)
-at tools.jackson.databind.deser.jackson.JsonNodeDeserializer.deserialize(JsonNodeDeserializer.java:86)
-at tools.jackson.databind.deser.jackson.JsonNodeDeserializer.deserialize(JsonNodeDeserializer.java:11)
-at tools.jackson.databind.deser.DeserializationContextExt.readRootValue(DeserializationContextExt.java:265)
-at tools.jackson.databind.ObjectMapper._readTreeAndClose(ObjectMapper.java:2647)
-at tools.jackson.databind.ObjectMapper.readTree(ObjectMapper.java:1190)
-at utilties.JSONReader.readJsonFile(JSONReader.java:14)
-at pages.LoginPage.<init>(LoginPage.java:33)
-at pages.HomePage.goToLogin(HomePage.java:52)
-at tests.LoginPageTest.loginTest(LoginPageTest.java:35)
-at ✽.User is on Poco Mega Store Login page "https://ecommerce-playground.lambdatest.io/index.php?route=account/login"(file:///C:/Users/jessp/eclipse-workspace/AutomationPractice/src/test/resources/features/LoginPage.feature:4)
-]]>
-            </full-stacktrace>
-          </exception> <!-- tools.jackson.core.exc.StreamReadException -->
+        </test-method> <!-- setup -->
+        <test-method signature="loginTestPositive()[pri:0, instance:tests.MyAccountPageTest@312aa7c]" started-at="2025-10-28T17:25:12 EDT" name="loginTestPositive" finished-at="2025-10-28T17:25:16 EDT" duration-ms="3527" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.CucumberRunnerTests@16150369]" started-at="2025-10-27T15:05:05 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-10-27T15:05:15 EDT" duration-ms="9708" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Login with invalid credentials"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Login to Poco Mega Store"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="tools.jackson.core.exc.StreamReadException">
-            <message>
-              <![CDATA[Unexpected character ('}' (code 125)): was expecting double-quote to start property name
- at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); byte offset: #594]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[tools.jackson.core.exc.StreamReadException: Unexpected character ('}' (code 125)): was expecting double-quote to start property name
- at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); byte offset: #594]
-at tools.jackson.core.JsonParser._constructReadException(JsonParser.java:1800)
-at tools.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:1049)
-at tools.jackson.core.json.UTF8StreamJsonParser._handleOddName(UTF8StreamJsonParser.java:2450)
-at tools.jackson.core.json.UTF8StreamJsonParser._parseName(UTF8StreamJsonParser.java:2101)
-at tools.jackson.core.json.UTF8StreamJsonParser.nextName(UTF8StreamJsonParser.java:945)
-at tools.jackson.databind.deser.jackson.BaseNodeDeserializer._deserializeContainerNoRecursion(BaseNodeDeserializer.java:316)
-at tools.jackson.databind.deser.jackson.JsonNodeDeserializer.deserialize(JsonNodeDeserializer.java:86)
-at tools.jackson.databind.deser.jackson.JsonNodeDeserializer.deserialize(JsonNodeDeserializer.java:11)
-at tools.jackson.databind.deser.DeserializationContextExt.readRootValue(DeserializationContextExt.java:265)
-at tools.jackson.databind.ObjectMapper._readTreeAndClose(ObjectMapper.java:2647)
-at tools.jackson.databind.ObjectMapper.readTree(ObjectMapper.java:1190)
-at utilties.JSONReader.readJsonFile(JSONReader.java:14)
-at pages.LoginPage.<init>(LoginPage.java:33)
-at pages.HomePage.goToLogin(HomePage.java:52)
-at tests.LoginPageTest.loginTest(LoginPageTest.java:35)
-at ✽.User is on Poco Mega Store Login page "https://ecommerce-playground.lambdatest.io/index.php?route=account/login"(file:///C:/Users/jessp/eclipse-workspace/AutomationPractice/src/test/resources/features/LoginPage.feature:4)
-]]>
-            </full-stacktrace>
-          </exception> <!-- tools.jackson.core.exc.StreamReadException -->
+        </test-method> <!-- loginTestPositive -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.MyAccountPageTest@312aa7c]" started-at="2025-10-28T17:25:16 EDT" name="teardown" finished-at="2025-10-28T17:25:16 EDT" duration-ms="387" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.CucumberRunnerTests@16150369]" started-at="2025-10-27T15:05:15 EDT" name="tearDownClass" finished-at="2025-10-27T15:05:15 EDT" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownClass -->
-      </class> <!-- runner.CucumberRunnerTests -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- teardown -->
+      </class> <!-- tests.MyAccountPageTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

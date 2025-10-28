@@ -3,7 +3,7 @@
 	xsi:schemaLocation="https://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.practice</groupId>
-	<artifactId>AutomationPractice</artifactId>
+	<artifactId>automation-practice</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<dependencies>
 		<!--https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
@@ -25,11 +25,12 @@
 			<artifactId>jackson-databind</artifactId>
 			<version>3.0.0</version>
 		</dependency>
-		<dependency>
-			<groupId>SeleniumAdvanced</groupId>
-			<artifactId>SeleniumAdvanced</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-		</dependency>
+		<!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>2.19.0</version>
+        </dependency>
 	</dependencies>
 	<build>
 		<plugins>

@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/4/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/1</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Oct 27 15:04:32 EDT 2025</td>
+<td>Started on:</td><td>Tue Oct 28 16:17:03 EDT 2025</td>
 </tr>
-<tr><td>Total time:</td><td>42 seconds (42368 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (179 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -68,7 +68,7 @@ function toggleAllBoxes() {
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
 <table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -76,173 +76,116 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='runner.CucumberRunnerTests.runScenario()'><b>runScenario</b><br>Test class: runner.CucumberRunnerTests<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login with invalid credentials", "Login to Poco Mega Store"</td>
-<td><div><pre>tools.jackson.core.exc.StreamReadException: Unexpected character (&apos;}&apos; (code 125)): was expecting double-quote to start property name
- at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); byte offset: #594]
-	at tools.jackson.core.JsonParser._constructReadException(JsonParser.java:1800)
-	at tools.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:1049)
-	at tools.jackson.core.json.UTF8StreamJsonParser._handleOddName(UTF8StreamJsonParser.java:2450)
-	at tools.jackson.core.json.UTF8StreamJsonParser._parseName(UTF8StreamJsonParser.java:2101)
-	at tools.jackson.core.json.UTF8StreamJsonParser.nextName(UTF8StreamJsonParser.java:945)
-	at tools.jackson.databind.deser.jackson.BaseNodeDeserializer._deserializeContainerNoRecursion(BaseNodeDeserializer.java:316)
-	at tools.jackson.databind.deser.jackson.JsonNodeDeserializer.deserialize(JsonNodeDeserializer.java:86)
-	at tools.jackson.databind.deser.jackson.JsonNodeDeserializer.deserialize(JsonNodeDeserializer.java:11)
-	at tools.jackson.databind.deser.DeserializationContextExt.readRootValue(DeserializationContextExt.java:265)
-	at tools.jackson.databind.ObjectMapper._readTreeAndClose(ObjectMapper.java:2647)
-	at tools.jackson.databind.ObjectMapper.readTree(ObjectMapper.java:1190)
-	at utilties.JSONReader.readJsonFile(JSONReader.java:14)
-	at pages.LoginPage.&lt;init&gt;(LoginPage.java:33)
-	at pages.HomePage.goToLogin(HomePage.java:52)
-	at tests.LoginPageTest.loginTest(LoginPageTest.java:35)
-	at ✽.User is on Poco Mega Store Login page &quot;https://ecommerce-playground.lambdatest.io/index.php?route=account/login&quot;(file:///C:/Users/jessp/eclipse-workspace/AutomationPractice/src/test/resources/features/LoginPage.feature:4)
-</pre></div><a href='#' onClick='toggleBox("stack-trace531373404", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace531373404'><pre>tools.jackson.core.exc.StreamReadException: Unexpected character (&apos;}&apos; (code 125)): was expecting double-quote to start property name
- at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); byte offset: #594]
-	at tools.jackson.core.JsonParser._constructReadException(JsonParser.java:1800)
-	at tools.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:1049)
-	at tools.jackson.core.json.UTF8StreamJsonParser._handleOddName(UTF8StreamJsonParser.java:2450)
-	at tools.jackson.core.json.UTF8StreamJsonParser._parseName(UTF8StreamJsonParser.java:2101)
-	at tools.jackson.core.json.UTF8StreamJsonParser.nextName(UTF8StreamJsonParser.java:945)
-	at tools.jackson.databind.deser.jackson.BaseNodeDeserializer._deserializeContainerNoRecursion(BaseNodeDeserializer.java:316)
-	at tools.jackson.databind.deser.jackson.JsonNodeDeserializer.deserialize(JsonNodeDeserializer.java:86)
-	at tools.jackson.databind.deser.jackson.JsonNodeDeserializer.deserialize(JsonNodeDeserializer.java:11)
-	at tools.jackson.databind.deser.DeserializationContextExt.readRootValue(DeserializationContextExt.java:265)
-	at tools.jackson.databind.ObjectMapper._readTreeAndClose(ObjectMapper.java:2647)
-	at tools.jackson.databind.ObjectMapper.readTree(ObjectMapper.java:1190)
-	at utilties.JSONReader.readJsonFile(JSONReader.java:14)
-	at pages.LoginPage.&lt;init&gt;(LoginPage.java:33)
-	at pages.HomePage.goToLogin(HomePage.java:52)
-	at tests.LoginPageTest.loginTest(LoginPageTest.java:35)
-	at ✽.User is on Poco Mega Store Login page &quot;https://ecommerce-playground.lambdatest.io/index.php?route=account/login&quot;(file:///C:/Users/jessp/eclipse-workspace/AutomationPractice/src/test/resources/features/LoginPage.feature:4)
+<td title='tests.MyAccountPageTest.setup()'><b>setup</b><br>Test class: tests.MyAccountPageTest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;url&apos; is required by BeforeSuite on method setup but has not been marked @Optional or defined
+in C:\Users\jessp\AppData\Local\Temp\testng-eclipse--912022265\testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:264)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:690)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:358)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1848289347", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1848289347'><pre>org.testng.TestNGException: 
+Parameter &apos;url&apos; is required by BeforeSuite on method setup but has not been marked @Optional or defined
+in C:\Users\jessp\AppData\Local\Temp\testng-eclipse--912022265\testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:264)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:690)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:358)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>10</td>
-<td>runner.CucumberRunnerTests@16150369</td></tr>
+<td>-1761682623</td>
+<td>tests.MyAccountPageTest@609e8838</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
 <tr>
-<td title='runner.CucumberRunnerTests.runScenario()'><b>runScenario</b><br>Test class: runner.CucumberRunnerTests<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login with valid credentials", "Login to Poco Mega Store"</td>
-<td><div><pre>tools.jackson.core.exc.StreamReadException: Unexpected character (&apos;}&apos; (code 125)): was expecting double-quote to start property name
- at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); byte offset: #594]
-	at tools.jackson.core.JsonParser._constructReadException(JsonParser.java:1800)
-	at tools.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:1049)
-	at tools.jackson.core.json.UTF8StreamJsonParser._handleOddName(UTF8StreamJsonParser.java:2450)
-	at tools.jackson.core.json.UTF8StreamJsonParser._parseName(UTF8StreamJsonParser.java:2101)
-	at tools.jackson.core.json.UTF8StreamJsonParser.nextName(UTF8StreamJsonParser.java:945)
-	at tools.jackson.databind.deser.jackson.BaseNodeDeserializer._deserializeContainerNoRecursion(BaseNodeDeserializer.java:316)
-	at tools.jackson.databind.deser.jackson.JsonNodeDeserializer.deserialize(JsonNodeDeserializer.java:86)
-	at tools.jackson.databind.deser.jackson.JsonNodeDeserializer.deserialize(JsonNodeDeserializer.java:11)
-	at tools.jackson.databind.deser.DeserializationContextExt.readRootValue(DeserializationContextExt.java:265)
-	at tools.jackson.databind.ObjectMapper._readTreeAndClose(ObjectMapper.java:2647)
-	at tools.jackson.databind.ObjectMapper.readTree(ObjectMapper.java:1190)
-	at utilties.JSONReader.readJsonFile(JSONReader.java:14)
-	at pages.LoginPage.&lt;init&gt;(LoginPage.java:33)
-	at pages.HomePage.goToLogin(HomePage.java:52)
-	at tests.LoginPageTest.loginTest(LoginPageTest.java:35)
-	at ✽.User is on Poco Mega Store Login page &quot;https://ecommerce-playground.lambdatest.io/index.php?route=account/login&quot;(file:///C:/Users/jessp/eclipse-workspace/AutomationPractice/src/test/resources/features/LoginPage.feature:4)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1006398046", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1006398046'><pre>tools.jackson.core.exc.StreamReadException: Unexpected character (&apos;}&apos; (code 125)): was expecting double-quote to start property name
- at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); byte offset: #594]
-	at tools.jackson.core.JsonParser._constructReadException(JsonParser.java:1800)
-	at tools.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:1049)
-	at tools.jackson.core.json.UTF8StreamJsonParser._handleOddName(UTF8StreamJsonParser.java:2450)
-	at tools.jackson.core.json.UTF8StreamJsonParser._parseName(UTF8StreamJsonParser.java:2101)
-	at tools.jackson.core.json.UTF8StreamJsonParser.nextName(UTF8StreamJsonParser.java:945)
-	at tools.jackson.databind.deser.jackson.BaseNodeDeserializer._deserializeContainerNoRecursion(BaseNodeDeserializer.java:316)
-	at tools.jackson.databind.deser.jackson.JsonNodeDeserializer.deserialize(JsonNodeDeserializer.java:86)
-	at tools.jackson.databind.deser.jackson.JsonNodeDeserializer.deserialize(JsonNodeDeserializer.java:11)
-	at tools.jackson.databind.deser.DeserializationContextExt.readRootValue(DeserializationContextExt.java:265)
-	at tools.jackson.databind.ObjectMapper._readTreeAndClose(ObjectMapper.java:2647)
-	at tools.jackson.databind.ObjectMapper.readTree(ObjectMapper.java:1190)
-	at utilties.JSONReader.readJsonFile(JSONReader.java:14)
-	at pages.LoginPage.&lt;init&gt;(LoginPage.java:33)
-	at pages.HomePage.goToLogin(HomePage.java:52)
-	at tests.LoginPageTest.loginTest(LoginPageTest.java:35)
-	at ✽.User is on Poco Mega Store Login page &quot;https://ecommerce-playground.lambdatest.io/index.php?route=account/login&quot;(file:///C:/Users/jessp/eclipse-workspace/AutomationPractice/src/test/resources/features/LoginPage.feature:4)
-</pre></div></td>
-<td>11</td>
-<td>runner.CucumberRunnerTests@16150369</td></tr>
+<td title='tests.MyAccountPageTest.setup()'><b>setup</b><br>Test class: tests.MyAccountPageTest</td>
+<td></td>
+<td>0</td>
+<td>tests.MyAccountPageTest@609e8838</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
 <tr>
-<td title='runner.CucumberRunnerTests.runScenario()'><b>runScenario</b><br>Test class: runner.CucumberRunnerTests<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login with invalid credentials", "Login to Poco Mega Store"</td>
-<td><div><pre>tools.jackson.core.exc.StreamReadException: Unexpected character (&apos;}&apos; (code 125)): was expecting double-quote to start property name
- at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); byte offset: #594]
-	at tools.jackson.core.JsonParser._constructReadException(JsonParser.java:1800)
-	at tools.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:1049)
-	at tools.jackson.core.json.UTF8StreamJsonParser._handleOddName(UTF8StreamJsonParser.java:2450)
-	at tools.jackson.core.json.UTF8StreamJsonParser._parseName(UTF8StreamJsonParser.java:2101)
-	at tools.jackson.core.json.UTF8StreamJsonParser.nextName(UTF8StreamJsonParser.java:945)
-	at tools.jackson.databind.deser.jackson.BaseNodeDeserializer._deserializeContainerNoRecursion(BaseNodeDeserializer.java:316)
-	at tools.jackson.databind.deser.jackson.JsonNodeDeserializer.deserialize(JsonNodeDeserializer.java:86)
-	at tools.jackson.databind.deser.jackson.JsonNodeDeserializer.deserialize(JsonNodeDeserializer.java:11)
-	at tools.jackson.databind.deser.DeserializationContextExt.readRootValue(DeserializationContextExt.java:265)
-	at tools.jackson.databind.ObjectMapper._readTreeAndClose(ObjectMapper.java:2647)
-	at tools.jackson.databind.ObjectMapper.readTree(ObjectMapper.java:1190)
-	at utilties.JSONReader.readJsonFile(JSONReader.java:14)
-	at pages.LoginPage.&lt;init&gt;(LoginPage.java:33)
-	at pages.HomePage.goToLogin(HomePage.java:52)
-	at tests.LoginPageTest.loginTest(LoginPageTest.java:35)
-	at ✽.User is on Poco Mega Store Login page &quot;https://ecommerce-playground.lambdatest.io/index.php?route=account/login&quot;(file:///C:/Users/jessp/eclipse-workspace/AutomationPractice/src/test/resources/features/LoginPage.feature:4)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1830669823", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1830669823'><pre>tools.jackson.core.exc.StreamReadException: Unexpected character (&apos;}&apos; (code 125)): was expecting double-quote to start property name
- at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); byte offset: #594]
-	at tools.jackson.core.JsonParser._constructReadException(JsonParser.java:1800)
-	at tools.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:1049)
-	at tools.jackson.core.json.UTF8StreamJsonParser._handleOddName(UTF8StreamJsonParser.java:2450)
-	at tools.jackson.core.json.UTF8StreamJsonParser._parseName(UTF8StreamJsonParser.java:2101)
-	at tools.jackson.core.json.UTF8StreamJsonParser.nextName(UTF8StreamJsonParser.java:945)
-	at tools.jackson.databind.deser.jackson.BaseNodeDeserializer._deserializeContainerNoRecursion(BaseNodeDeserializer.java:316)
-	at tools.jackson.databind.deser.jackson.JsonNodeDeserializer.deserialize(JsonNodeDeserializer.java:86)
-	at tools.jackson.databind.deser.jackson.JsonNodeDeserializer.deserialize(JsonNodeDeserializer.java:11)
-	at tools.jackson.databind.deser.DeserializationContextExt.readRootValue(DeserializationContextExt.java:265)
-	at tools.jackson.databind.ObjectMapper._readTreeAndClose(ObjectMapper.java:2647)
-	at tools.jackson.databind.ObjectMapper.readTree(ObjectMapper.java:1190)
-	at utilties.JSONReader.readJsonFile(JSONReader.java:14)
-	at pages.LoginPage.&lt;init&gt;(LoginPage.java:33)
-	at pages.HomePage.goToLogin(HomePage.java:52)
-	at tests.LoginPageTest.loginTest(LoginPageTest.java:35)
-	at ✽.User is on Poco Mega Store Login page &quot;https://ecommerce-playground.lambdatest.io/index.php?route=account/login&quot;(file:///C:/Users/jessp/eclipse-workspace/AutomationPractice/src/test/resources/features/LoginPage.feature:4)
+<td title='tests.MyAccountPageTest.loginTestPositive()'><b>loginTestPositive</b><br>Test class: tests.MyAccountPageTest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;url&apos; is required by BeforeSuite on method setup but has not been marked @Optional or defined
+in C:\Users\jessp\AppData\Local\Temp\testng-eclipse--912022265\testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:264)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:690)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:358)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div><a href='#' onClick='toggleBox("stack-trace884603232", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace884603232'><pre>org.testng.TestNGException: 
+Parameter &apos;url&apos; is required by BeforeSuite on method setup but has not been marked @Optional or defined
+in C:\Users\jessp\AppData\Local\Temp\testng-eclipse--912022265\testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:264)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:690)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:358)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>9</td>
-<td>runner.CucumberRunnerTests@16150369</td></tr>
-<tr>
-<td title='runner.CucumberRunnerTests.runScenario()'><b>runScenario</b><br>Test class: runner.CucumberRunnerTests<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login with invalid credentials", "Login to Poco Mega Store"</td>
-<td><div><pre>tools.jackson.core.exc.StreamReadException: Unexpected character (&apos;}&apos; (code 125)): was expecting double-quote to start property name
- at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); byte offset: #594]
-	at tools.jackson.core.JsonParser._constructReadException(JsonParser.java:1800)
-	at tools.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:1049)
-	at tools.jackson.core.json.UTF8StreamJsonParser._handleOddName(UTF8StreamJsonParser.java:2450)
-	at tools.jackson.core.json.UTF8StreamJsonParser._parseName(UTF8StreamJsonParser.java:2101)
-	at tools.jackson.core.json.UTF8StreamJsonParser.nextName(UTF8StreamJsonParser.java:945)
-	at tools.jackson.databind.deser.jackson.BaseNodeDeserializer._deserializeContainerNoRecursion(BaseNodeDeserializer.java:316)
-	at tools.jackson.databind.deser.jackson.JsonNodeDeserializer.deserialize(JsonNodeDeserializer.java:86)
-	at tools.jackson.databind.deser.jackson.JsonNodeDeserializer.deserialize(JsonNodeDeserializer.java:11)
-	at tools.jackson.databind.deser.DeserializationContextExt.readRootValue(DeserializationContextExt.java:265)
-	at tools.jackson.databind.ObjectMapper._readTreeAndClose(ObjectMapper.java:2647)
-	at tools.jackson.databind.ObjectMapper.readTree(ObjectMapper.java:1190)
-	at utilties.JSONReader.readJsonFile(JSONReader.java:14)
-	at pages.LoginPage.&lt;init&gt;(LoginPage.java:33)
-	at pages.HomePage.goToLogin(HomePage.java:52)
-	at tests.LoginPageTest.loginTest(LoginPageTest.java:35)
-	at ✽.User is on Poco Mega Store Login page &quot;https://ecommerce-playground.lambdatest.io/index.php?route=account/login&quot;(file:///C:/Users/jessp/eclipse-workspace/AutomationPractice/src/test/resources/features/LoginPage.feature:4)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1019157412", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1019157412'><pre>tools.jackson.core.exc.StreamReadException: Unexpected character (&apos;}&apos; (code 125)): was expecting double-quote to start property name
- at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); byte offset: #594]
-	at tools.jackson.core.JsonParser._constructReadException(JsonParser.java:1800)
-	at tools.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:1049)
-	at tools.jackson.core.json.UTF8StreamJsonParser._handleOddName(UTF8StreamJsonParser.java:2450)
-	at tools.jackson.core.json.UTF8StreamJsonParser._parseName(UTF8StreamJsonParser.java:2101)
-	at tools.jackson.core.json.UTF8StreamJsonParser.nextName(UTF8StreamJsonParser.java:945)
-	at tools.jackson.databind.deser.jackson.BaseNodeDeserializer._deserializeContainerNoRecursion(BaseNodeDeserializer.java:316)
-	at tools.jackson.databind.deser.jackson.JsonNodeDeserializer.deserialize(JsonNodeDeserializer.java:86)
-	at tools.jackson.databind.deser.jackson.JsonNodeDeserializer.deserialize(JsonNodeDeserializer.java:11)
-	at tools.jackson.databind.deser.DeserializationContextExt.readRootValue(DeserializationContextExt.java:265)
-	at tools.jackson.databind.ObjectMapper._readTreeAndClose(ObjectMapper.java:2647)
-	at tools.jackson.databind.ObjectMapper.readTree(ObjectMapper.java:1190)
-	at utilties.JSONReader.readJsonFile(JSONReader.java:14)
-	at pages.LoginPage.&lt;init&gt;(LoginPage.java:33)
-	at pages.HomePage.goToLogin(HomePage.java:52)
-	at tests.LoginPageTest.loginTest(LoginPageTest.java:35)
-	at ✽.User is on Poco Mega Store Login page &quot;https://ecommerce-playground.lambdatest.io/index.php?route=account/login&quot;(file:///C:/Users/jessp/eclipse-workspace/AutomationPractice/src/test/resources/features/LoginPage.feature:4)
-</pre></div></td>
-<td>10</td>
-<td>runner.CucumberRunnerTests@16150369</td></tr>
+<td>0</td>
+<td>tests.MyAccountPageTest@609e8838</td></tr>
 </table><p>
 </body>
 </html>
