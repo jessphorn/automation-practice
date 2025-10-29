@@ -40,13 +40,21 @@ private void initialize() throws Exception {
     title = JSONReader.getTestData(LOGIN_VALIDATION_DATA, "title");
 }
 
+public boolean verifyLoginError(String expected) {
+    return loginError.getText().contains(expected);
+}
+
 public MyAccountPage login(String username, String password) throws Exception {
     MyAccountPage myAcct = null;
     usernameBox.sendKeys(username);
     passwordBox.sendKeys(password);
     loginBtn.click();
     myAcct = new MyAccountPage(driver);
-    new WebDriverWait(driver, Duration.ofMillis(20000)).until(ExpectedConditions.titleIs(myAcct.title));
+    try {
+        new WebDriverWait(driver, Duration.ofMillis(20000)).until(ExpectedConditions.titleIs(myAcct.title));
+    } catch (Exception e) {
+       //do nothing
+    }
     return myAcct;
 }
     

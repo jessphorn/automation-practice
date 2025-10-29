@@ -1,18 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <parameter name="browser" value="Edge"/>
-  <parameter name="url" value="https://ecommerce-playground.lambdatest.io/"/>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="tests.MyAccountPageTest">
+      <class name="runner.CucumberTestRunner">
         <methods>
-          <include name="setup"/>
-          <include name="loginTestPositive"/>
-          <include name="teardown"/>
-          <include name="setup"/>
+          <include name="setUpClass"/>
+          <include name="tearDownClass"/>
+          <include name="runScenario" invocation-numbers="1 2 3"/>
         </methods>
-      </class> <!-- tests.MyAccountPageTest -->
+      </class> <!-- runner.CucumberTestRunner -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

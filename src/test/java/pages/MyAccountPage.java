@@ -2,6 +2,7 @@ package pages;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import utilities.JSONReader;
@@ -14,6 +15,9 @@ public class MyAccountPage {
 
     String url;
     String title;
+    
+    @FindBy(partialLinkText = "Logout")
+    WebElement logoutLink;
 
     public MyAccountPage(WebDriver wd) throws Exception {
         driver = wd;
@@ -28,5 +32,9 @@ public class MyAccountPage {
 
     public boolean verifyLogin() {
         return driver.getTitle().equals(title);
+    }
+    
+    public void logout() {
+        logoutLink.click();
     }
 }
