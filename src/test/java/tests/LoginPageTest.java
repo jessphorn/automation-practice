@@ -25,7 +25,7 @@ public class LoginPageTest extends BasePage {
 
     @Before
     public void setUpScenario() throws Exception {
-	setup("Firefox", "https://ecommerce-playground.lambdatest.io/");
+	setup("Edge", "https://ecommerce-playground.lambdatest.io/");
 	driver = getDriver();
     }
 
@@ -46,10 +46,17 @@ public class LoginPageTest extends BasePage {
         loggedIn = true;
     }
     
-    @Then("User should be able to see error message {string}")
+    @Then("User should be able to see errorMessage {string}")
     public void verifyErrorMessage(String expectedError) {
         Assert.assertTrue(login.verifyLoginError(expectedError));
         loggedIn = false;
+    }
+    
+    @When("User enters username as {string} and password as {string} {int} times")
+    public void attemptToLogin(String username, String password, int attempts) throws Exception {
+	for(int i = 0; i < attempts; i++) {
+	    login.login(username, password);
+	}
     }
     
     @After

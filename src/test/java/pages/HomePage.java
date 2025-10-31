@@ -43,7 +43,7 @@ public class HomePage {
 	action.moveToElement(myAcctDD).perform();
 	loginLink.click();
 	login = new LoginPage(driver);
-	new WebDriverWait(driver, Duration.ofMillis(20000)).until(ExpectedConditions.titleIs(login.title));
+	new WebDriverWait(driver, Duration.ofMillis(10000)).until(ExpectedConditions.titleIs(login.title));
 	return login;
     }
 

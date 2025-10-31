@@ -46,12 +46,14 @@ public boolean verifyLoginError(String expected) {
 
 public MyAccountPage login(String username, String password) throws Exception {
     MyAccountPage myAcct = null;
+    usernameBox.clear();
+    passwordBox.clear();
     usernameBox.sendKeys(username);
     passwordBox.sendKeys(password);
     loginBtn.click();
     myAcct = new MyAccountPage(driver);
     try {
-        new WebDriverWait(driver, Duration.ofMillis(20000)).until(ExpectedConditions.titleIs(myAcct.title));
+        new WebDriverWait(driver, Duration.ofMillis(10000)).until(ExpectedConditions.titleIs(myAcct.title));
     } catch (Exception e) {
        //do nothing
     }
