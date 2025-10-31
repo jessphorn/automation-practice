@@ -20,12 +20,16 @@ private final String LOGIN_VALIDATION_DATA = "src/test/resources/validation-data
 String url;
 String title;
 
+@FindBy(linkText = "Forgotten Password")
+WebElement forgotPwdBtn;
 @FindBy(css = "input[value='Login']")
 WebElement loginBtn;
 @FindBy(xpath = "//*[@id=\"account-login\"]/div[1]")
 WebElement loginError;
 @FindBy(id = "input-password")
 WebElement passwordBox;
+@FindBy(xpath = "//*[@id=\"account-login\"]/div[1]")
+WebElement retrievalSuccess;
 @FindBy(id = "input-email")
 WebElement usernameBox;
 
@@ -44,6 +48,14 @@ public boolean verifyLoginError(String expected) {
     return loginError.getText().contains(expected);
 }
 
+public boolean verifyOnLoginPage(String expected) {
+    return driver.getCurrentUrl().equals(expected);
+}
+
+public boolean verifyPwdRetrievalSuccess(String expected) {
+    return retrievalSuccess.getText().contains(expected);
+}
+
 public MyAccountPage login(String username, String password) throws Exception {
     MyAccountPage myAcct = null;
     usernameBox.clear();
@@ -55,9 +67,22 @@ public MyAccountPage login(String username, String password) throws Exception {
     try {
         new WebDriverWait(driver, Duration.ofMillis(10000)).until(ExpectedConditions.titleIs(myAcct.title));
     } catch (Exception e) {
-       //do nothing
+       myAcct = null;
     }
     return myAcct;
+}
+
+public ForgotPasswordPage navigateToForgotPassword() throws Exception {
+    ForgotPasswordPage forgotPwd = null;
+    forgotPwdBtn.click();
+    forgotPwd = new ForgotPasswordPage(driver);
+    try {
+	new WebDriverWait(driver, Duration.ofMillis(10000)).until(ExpectedConditions.titleIs(forgotPwd.title));
+    } catch (Exception e) {
+	forgotPwd = null;
+    }
+    return forgotPwd;
+    
 }
     
 }

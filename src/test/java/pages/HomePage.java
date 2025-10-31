@@ -43,8 +43,24 @@ public class HomePage {
 	action.moveToElement(myAcctDD).perform();
 	loginLink.click();
 	login = new LoginPage(driver);
-	new WebDriverWait(driver, Duration.ofMillis(10000)).until(ExpectedConditions.titleIs(login.title));
+	try {
+	    new WebDriverWait(driver, Duration.ofMillis(10000)).until(ExpectedConditions.titleIs(login.title));
+	} catch (Exception e) {
+	    login = null;
+	}
 	return login;
+    }
+    
+    public ForgotPasswordPage navigateToForgotPassword() throws Exception {
+	ForgotPasswordPage forgotPwd = null;
+	LoginPage login = navigateToLogin();
+	forgotPwd = login.navigateToForgotPassword();
+	try {
+	    new WebDriverWait(driver, Duration.ofMillis(10000)).until(ExpectedConditions.titleIs(forgotPwd.title));
+	} catch (Exception e) {
+	    forgotPwd = null;
+	}
+	return forgotPwd;
     }
 
     public void returnHome() {

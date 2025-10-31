@@ -33,11 +33,13 @@ public class LoginPageTest extends BasePage {
     public void goToLoginPage(String url) throws Exception {
         home = new HomePage(driver);
         login = home.navigateToLogin();
+        Assert.assertTrue(login.verifyOnLoginPage(url));
     }
     
     @When("User enters username as {string} and password as {string}")
     public void login(String username, String password) throws Exception {
         myAcct = login.login(username, password);
+        Assert.assertNotNull(myAcct);
     }
     
     @Then("User should be able to login successfully and the My Account page opens")

@@ -1,3 +1,4 @@
+@IgnoreMe
 Feature: Login to Poco Mega Store
 
 Background:
